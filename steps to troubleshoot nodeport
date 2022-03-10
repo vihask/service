@@ -1,0 +1,7 @@
+#check the pod and verfify the target and the nodeport
+kubectl get svc
+#verify if the nodeport is not used by other services
+#curl the internal IP and port and see if it is reachable, if yes
+curl http://internal-IP:target port
+#curl the external IP and nodeport
+curl http://external-ip:nodeport
